@@ -1,0 +1,106 @@
+# This workflow will install Python dependencies,
+# run the python script to generate the database,
+# and push it back to the repo.
+
+name: Generate Database SQLite file
+
+on:
+  workflow_dispatch:  # manual execution
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: astral-sh/setup-uv@v5
+      with:
+        python-version: '3.13'
+        enable-cache: true
+
+    - name: Install dependencies
+      run: |
+        uv pip install astrodb_utils
+
+    - name: Generate sqlite (file) database
+      run: |
+        # Generate database
+        uv run build_db_from_json database.toml
+      working-directory: .
+      shell: bash
+
+    - name: Create release copy
+      run: |
+        # Get release tag
+        release_tag=${{ github.event.release.tag_name }}
+
+        echo "Event name: ${{ github.event_name }}"
+        echo "Release tag: $release_tag"
+
+        # Create copy of database file with release tag
+        cp astrodb-template.sqlite astrodb-template-${release_tag}.sqlite
+        echo "Release copy created: astrodb-template-${release_tag}.sqlite"
+      shell: bash
+      if: ${{ github.event_name == 'release' }}
+
+    - name: Commit database file
+      run: |       
+        # Git configuration
+        git config user.name "${{ secrets.USER_LOGIN }}"
+        git config user.email "${{ secrets.USER_ID }}+${{ secrets.USER_LOGIN }}@users.noreply.github.com"
+
+        # Determine the branch name
+        # For release events, default to main (we're on a tag, detached HEAD)
+        # For workflow_dispatch, use head_ref if available, otherwise detect from git
+        if [ "${{ github.event_name }}" == "release" ]; then
+          branch_name="main"
+        elif [ -n "${{ github.head_ref }}" ]; then
+          branch_name="${{ github.head_ref }}"
+        else
+          # Try to get branch from git (works if we're on a branch)
+          branch_name=$(git symbolic-ref --short HEAD 2>/dev/null || echo "")
+          # If detached HEAD, try ref_name (might be a branch or tag)
+          if [ -z "$branch_name" ]; then
+            branch_name="${{ github.ref_name }}"
+            # If ref_name looks like a tag (contains dots or starts with v), use main
+            if [[ "$branch_name" =~ \. ]] || [[ "$branch_name" =~ ^v ]]; then
+              branch_name="main"
+            fi
+          fi
+        fi
+
+        echo "Target branch: $branch_name"
+
+        # Checkout the branch (handles detached HEAD state)
+        git checkout -B "$branch_name" || git checkout "$branch_name"
+
+        # Adding database file(s)
+        git add *.sqlite
+        git commit -m "Updating database" || true
+        git push origin "$branch_name"
+      shell: bash
+
+    - name: Move tag to this commit
+      run: |
+        # Git configuration
+        git config user.name "${{ secrets.USER_LOGIN }}"
+        git config user.email "${{ secrets.USER_ID }}+${{ secrets.USER_LOGIN }}@users.noreply.github.com"
+
+        # Get release tag
+        release_tag=${{ github.event.release.tag_name }}
+        echo "Release tag: $release_tag"
+
+        # Remove existing tag in local and remote
+        git tag -d $release_tag
+        git push origin :refs/tags/$release_tag
+
+        # Replace the tag
+        git tag -fa $release_tag
+
+        # Push the tag
+        git push origin $release_tag
+      shell: bash
+      if: ${{ github.event_name == 'release' }}

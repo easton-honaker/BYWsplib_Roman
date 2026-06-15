@@ -1,0 +1,31 @@
+[
+    {
+        "regime": "gamma-ray"
+    },
+    {
+        "regime": "x-ray"
+    },
+    {
+        "regime": "ultraviolet"
+    },
+    {
+        "regime": "optical"
+    },
+    {
+        "regime": "nir",
+        "description": "near-infrared, 1-5 microns"
+    },
+    {
+        "regime": "fir",
+        "description": "far-infrared, 30-100 microns"
+    },
+    {
+        "regime": "infrared"
+    },
+    {
+        "regime": "millimeter"
+    },
+    {
+        "regime": "radio"
+    }
+]

@@ -1,0 +1,161 @@
+{
+    "Sources": [
+        {
+            "source": "2243-1606",
+            "ra_deg": 340.9552973,
+            "dec_deg": -16.1066718,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": null,
+            "comments": "Notes: in ESO archive as quasar candidate. Previously a YMG candidate but not anymore."
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 27.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 31.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "2243-1606"
+        },
+        {
+            "other_name": "Dan+Guillaume, Sam Goodman, MartinKb, Arttu Sainio"
+        },
+        {
+            "other_name": "J224349.27-160624.0"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 16.552,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 16.321,
+            "magnitude_error": 0.043,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 15.961,
+            "magnitude_error": 0.028,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 14.863,
+            "magnitude_error": 0.027,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 17.9,
+            "magnitude_error": 0.025,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 92.4,
+            "pm_ra_error": 11.3,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -76.8,
+            "pm_dec_error": 11.3,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 120.1,
+            "v_tan": 17.9,
+            "adopted": true,
+            "comments": null,
+            "reference": "PS1 (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T4",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 24.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2020-10-22T00:00:00",
+            "comments": "Burgasser",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

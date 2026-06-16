@@ -1,0 +1,137 @@
+{
+    "Sources": [
+        {
+            "source": "1638-0742",
+            "ra_deg": 249.7414944,
+            "dec_deg": -7.7028468,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 44.1,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 36.3,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "1638-0742"
+        },
+        {
+            "other_name": "J163857.95-074210.2"
+        },
+        {
+            "other_name": "zbyszek_w, guyepeak, Arttu Sainio, Sam Goodman, Tom Bickle, Melina Thevenot, Borvo"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 18.825,
+            "magnitude_error": 0.131,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 18.967,
+            "magnitude_error": 0.0,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.944,
+            "magnitude_error": 0.065,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -632.7,
+            "pm_ra_error": 81.9,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 44.8,
+            "pm_dec_error": 91.5,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 634.2,
+            "v_tan": 109.0,
+            "adopted": true,
+            "comments": null,
+            "reference": "CatWISE2020"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "d/sdT7.5",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 27.5,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "sd",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Magellan",
+            "instrument": "FIRE",
+            "mode": "Prism",
+            "observation_date": "2020-02-14T00:00:00",
+            "comments": "Schneider",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

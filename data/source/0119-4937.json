@@ -1,0 +1,149 @@
+{
+    "Sources": [
+        {
+            "source": "0119-4937",
+            "ra_deg": 19.8824367,
+            "dec_deg": -49.6306692,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "RG12",
+            "other_references": null,
+            "comments": "Comment: reclassify as SD from T7; extra2: same 2018 spec, no value add. good color. gets a comment abt suppressed K though"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 39.6,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 24.2,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0119-4937"
+        },
+        {
+            "other_name": "J011931.78-493750.4"
+        },
+        {
+            "other_name": "planetsam, Jim Walla (JimW59)"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 19.064,
+            "magnitude_error": 0.303,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 18.593,
+            "magnitude_error": 0.063,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 17.755,
+            "magnitude_error": 0.079,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.069,
+            "magnitude_error": 0.024,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 604.2,
+            "pm_ra_error": 29.7,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -514.2,
+            "pm_dec_error": 30.3,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 793.4,
+            "v_tan": 91.1,
+            "adopted": true,
+            "comments": null,
+            "reference": "unTimely (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "sd",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "JDK21"
+        },
+        {
+            "source_type": "sdT7",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 27.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "JDK21"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Magellan",
+            "instrument": "FIRE",
+            "mode": "Prism",
+            "observation_date": "2018-12-01T00:00:00",
+            "comments": "Faherty",
+            "reference": "JDK21",
+            "other_references": null
+        }
+    ]
+}

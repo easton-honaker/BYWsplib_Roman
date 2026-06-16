@@ -1,0 +1,161 @@
+{
+    "Sources": [
+        {
+            "source": "0738+5440",
+            "ra_deg": 114.6148253,
+            "dec_deg": 54.6679134,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": null,
+            "comments": "Notes: Previously a YMG candidate but not anymore."
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 21.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 23.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0738+5440"
+        },
+        {
+            "other_name": "Ghost_Sheep_SWR, zbyszek_w, Arttu Sainio, Sam Goodman, Tom Bickle, Borvo"
+        },
+        {
+            "other_name": "J073827.55+544004.4"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 17.603,
+            "magnitude_error": 0.063,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 17.293,
+            "magnitude_error": 0.027,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 17.559,
+            "magnitude_error": 0.134,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 16.92,
+            "magnitude_error": 0.047,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.031,
+            "magnitude_error": 0.027,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -117.5,
+            "pm_ra_error": 4.8,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -219.5,
+            "pm_dec_error": 4.8,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 249.0,
+            "v_tan": 28.1,
+            "adopted": true,
+            "comments": null,
+            "reference": "UHS DR3"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T7",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 27.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2021-01-04T00:00:00",
+            "comments": "Jackie",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

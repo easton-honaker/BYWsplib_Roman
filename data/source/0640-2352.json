@@ -1,0 +1,184 @@
+{
+    "Sources": [
+        {
+            "source": "0640-2352",
+            "ra_deg": 100.1058561,
+            "dec_deg": -23.8726577,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "JDK21",
+            "other_references": null,
+            "comments": "Comment: CHECK; extra2: same 2018 spec in JDK21. typed as L5.  review final type; Notes: CatWISE 2020 reject catalog"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 23.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 21.2,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0640-2352"
+        },
+        {
+            "other_name": "J064025.40-235221.5"
+        },
+        {
+            "other_name": "Melina Th\u00c8venot, Sam Goodman, Karl Selg-Mann, mar.bil"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 49.785,
+            "parallax_error": 0.581,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "GaiaDR3"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 14.087,
+            "magnitude_error": 0.051,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "2MASS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 15.022,
+            "magnitude_error": 0.004,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 13.409,
+            "magnitude_error": 0.004,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 12.722,
+            "magnitude_error": 0.011,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 12.439,
+            "magnitude_error": 0.01,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 17.318,
+            "magnitude_error": 0.008,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "PS1",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 191.5,
+            "pm_ra_error": 0.4,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -129.9,
+            "pm_dec_error": 0.5,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 231.4,
+            "v_tan": 22.0,
+            "adopted": true,
+            "comments": null,
+            "reference": "GaiaDR3"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L2",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 12.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2018-10-27T00:00:00",
+            "comments": "Burgasser et al.",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

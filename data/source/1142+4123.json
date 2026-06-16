@@ -1,0 +1,173 @@
+{
+    "Sources": [
+        {
+            "source": "1142+4123",
+            "ra_deg": 175.5118709,
+            "dec_deg": 41.3937667,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "JG22",
+            "other_references": null,
+            "comments": "Flags: COLOR_OUTLIER; Notes: Candidate member of Rhea 468 (Gagne+2022)"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 60.7,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 35.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "1142+4123"
+        },
+        {
+            "other_name": "J114202.84+412337.5"
+        },
+        {
+            "other_name": "touches, NibiruX, Sam Goodman, Arttu Sainio"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 16.711,
+            "magnitude_error": 0.024,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 18.011,
+            "magnitude_error": 0.055,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 15.638,
+            "magnitude_error": 0.022,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.611,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 13.992,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 20.401,
+            "magnitude_error": 0.004,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -153.4,
+            "pm_ra_error": 2.9,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -70.8,
+            "pm_dec_error": 2.9,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 168.9,
+            "v_tan": 28.4,
+            "adopted": true,
+            "comments": null,
+            "reference": "UHS DR3"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L6gamma",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 16.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "y",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2024-01-30T00:00:00",
+            "comments": "Burgasser, Softich",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "Sources": [
+        {
+            "source": "0716+5030",
+            "ra_deg": 109.2321665,
+            "dec_deg": 50.5118643,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": null,
+            "comments": "Notes: Previously a YMG candidate but not anymore."
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 32.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 29.7,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0716+5030"
+        },
+        {
+            "other_name": "J071655.72+503042.7"
+        },
+        {
+            "other_name": "stevnbak, Arttu Sainio, Sam Goodman, MartinKb, Frank Kiwy"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 16.432,
+            "magnitude_error": 0.021,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 17.24,
+            "magnitude_error": 0.035,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 15.708,
+            "magnitude_error": 0.205,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "2MASS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.821,
+            "magnitude_error": 0.017,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 14.109,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 19.559,
+            "magnitude_error": 0.034,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -11.8,
+            "pm_ra_error": 3.5,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -127.6,
+            "pm_dec_error": 3.5,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 128.2,
+            "v_tan": 18.1,
+            "adopted": true,
+            "comments": null,
+            "reference": "UHS DR3"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L9.5",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 19.5,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2020-12-22T00:00:00",
+            "comments": "Faherty, Calamari",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

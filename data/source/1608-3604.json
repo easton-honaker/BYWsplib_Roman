@@ -1,0 +1,137 @@
+{
+    "Sources": [
+        {
+            "source": "1608-3604",
+            "ra_deg": 242.2452027,
+            "dec_deg": -36.0799871,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "JDK23",
+            "other_references": null,
+            "comments": "Comment: see Y band. blueT6 in K23; Notes: blended"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 39.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 31.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "1608-3604"
+        },
+        {
+            "other_name": "J160858.84-360447.9"
+        },
+        {
+            "other_name": "Tom Bickle"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 17.871,
+            "magnitude_error": 0.038,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 18.046,
+            "magnitude_error": 0.164,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.296,
+            "magnitude_error": 0.04,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -60.6,
+            "pm_ra_error": 27.5,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -133.8,
+            "pm_dec_error": 26.1,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 146.9,
+            "v_tan": 21.9,
+            "adopted": true,
+            "comments": null,
+            "reference": "unTimely (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "sd",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "sdT7",
+            "spectral_type_error": 2.0,
+            "spectral_type_number": 27.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "SOAR",
+            "instrument": "ARCoIRIS",
+            "mode": "Prism",
+            "observation_date": "2023-03-02T00:00:00",
+            "comments": "Schneider",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

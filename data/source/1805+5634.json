@@ -1,0 +1,204 @@
+{
+    "Sources": [
+        {
+            "source": "1805+5634",
+            "ra_deg": 271.4468852,
+            "dec_deg": 56.5714524,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": null,
+            "comments": "Flags: YMG"
+        }
+    ],
+    "Associations": [
+        {
+            "association": "CRIUS198",
+            "membership_probability": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_distance",
+            "value": 44.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_prob",
+            "value": 99.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 47.9,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 45.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "1805+5634"
+        },
+        {
+            "other_name": "J180547.25+563417.2"
+        },
+        {
+            "other_name": "NicholastheElder, wpendrill"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 15.924,
+            "magnitude_error": 0.02,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 16.814,
+            "magnitude_error": 0.02,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 15.221,
+            "magnitude_error": 0.018,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.471,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 14.177,
+            "magnitude_error": 0.012,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 19.044,
+            "magnitude_error": 0.046,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 10.1,
+            "pm_ra_error": 1.8,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 158.0,
+            "pm_dec_error": 1.8,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 158.4,
+            "v_tan": 33.8,
+            "adopted": true,
+            "comments": null,
+            "reference": "UHS DR3"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L6",
+            "spectral_type_error": 2.0,
+            "spectral_type_number": 16.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2024-06-13T00:00:00",
+            "comments": "Rothermich",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

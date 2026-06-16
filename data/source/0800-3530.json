@@ -1,0 +1,161 @@
+{
+    "Sources": [
+        {
+            "source": "0800-3530",
+            "ra_deg": 120.0646107,
+            "dec_deg": -35.5006758,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 47.3,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 40.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0800-3530"
+        },
+        {
+            "other_name": "J080015.50-353002.4"
+        },
+        {
+            "other_name": "Vidar87"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 15.357,
+            "magnitude_error": 0.088,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "2MASS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 16.316,
+            "magnitude_error": 0.097,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "2MASS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 14.872,
+            "magnitude_error": 0.136,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "2MASS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.058,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 13.757,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -100.8,
+            "pm_ra_error": 3.4,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 22.3,
+            "pm_dec_error": 3.2,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 103.2,
+            "v_tan": 19.9,
+            "adopted": true,
+            "comments": null,
+            "reference": "unTimely (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L5",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 15.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2022-03-17T00:00:00",
+            "comments": "Faherty, Hamlet, Caselden",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

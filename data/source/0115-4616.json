@@ -1,0 +1,161 @@
+{
+    "Sources": [
+        {
+            "source": "0115-4616",
+            "ra_deg": 18.9947707,
+            "dec_deg": -46.272445,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "RG12",
+            "other_references": null,
+            "comments": "extra2: same 2018 spec, no added value but good colors."
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 31.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 26.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0115-4616"
+        },
+        {
+            "other_name": "J011558.74-461620.8"
+        },
+        {
+            "other_name": "stevnbak, Sam Goodman"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 17.754,
+            "magnitude_error": 0.059,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 17.348,
+            "magnitude_error": 0.02,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 18.276,
+            "magnitude_error": 0.183,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 17.154,
+            "magnitude_error": 0.049,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 14.884,
+            "magnitude_error": 0.023,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -329.5,
+            "pm_ra_error": 7.8,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -393.6,
+            "pm_dec_error": 7.8,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 513.3,
+            "v_tan": 63.2,
+            "adopted": true,
+            "comments": null,
+            "reference": "NSC (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T6",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 26.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "JDK21"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "JDK21"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Magellan",
+            "instrument": "FIRE",
+            "mode": "Prism",
+            "observation_date": "2018-12-01T00:00:00",
+            "comments": "Faherty",
+            "reference": "JDK21",
+            "other_references": null
+        }
+    ]
+}

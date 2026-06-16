@@ -1,0 +1,215 @@
+{
+    "Sources": [
+        {
+            "source": "0345+5137",
+            "ra_deg": 56.4470477,
+            "dec_deg": 51.6211143,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "JDK23",
+            "other_references": "Azul",
+            "comments": "extra2: 2021 spec, use for colors; Flags: YMG"
+        }
+    ],
+    "Associations": [
+        {
+            "association": "CUMA",
+            "membership_probability": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_distance",
+            "value": 25.9,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_prob",
+            "value": 99.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 24.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 21.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0345+5137"
+        },
+        {
+            "other_name": "Dan Caselden, Arttu Sainio, MelinaT, Herakles"
+        },
+        {
+            "other_name": "J034547.29+513716.0"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 36.203,
+            "parallax_error": 1.736,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "GaiaDR3"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 14.431,
+            "magnitude_error": 0.004,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS GCS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 15.384,
+            "magnitude_error": 0.006,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS GCS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 13.62,
+            "magnitude_error": 0.003,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS GCS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 12.848,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 12.565,
+            "magnitude_error": 0.012,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 16.791,
+            "magnitude_error": 0.011,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS GCS",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -86.9,
+            "pm_ra_error": 2.0,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 7.7,
+            "pm_dec_error": 2.0,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 87.2,
+            "v_tan": 11.4,
+            "adopted": true,
+            "comments": null,
+            "reference": "GaiaDR3"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L6",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 16.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "JDK23"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "JDK23"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2020-11-24T00:00:00",
+            "comments": "Faherty, Rothermich, Calamari",
+            "reference": "JDK23",
+            "other_references": null
+        }
+    ]
+}

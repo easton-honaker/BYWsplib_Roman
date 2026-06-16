@@ -1,0 +1,211 @@
+{
+    "Sources": [
+        {
+            "source": "1351-1015",
+            "ra_deg": 207.8210779,
+            "dec_deg": -10.2524449,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": "Azul",
+            "comments": "Flags: YMG"
+        }
+    ],
+    "Associations": [
+        {
+            "association": "ARG",
+            "membership_probability": 14.0,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        },
+        {
+            "association": "CARN",
+            "membership_probability": 83.0,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_distance",
+            "value": 35.6,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_prob",
+            "value": 96.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 54.2,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 46.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "1351-1015"
+        },
+        {
+            "other_name": "J135117.05-101508.8"
+        },
+        {
+            "other_name": "Sam Goodman, Arttu Sainio"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 15.174,
+            "magnitude_error": 0.009,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 16.05,
+            "magnitude_error": 0.009,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 14.516,
+            "magnitude_error": 0.01,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.028,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 13.767,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 17.307,
+            "magnitude_error": 0.019,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -144.0,
+            "pm_ra_error": 3.2,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -25.5,
+            "pm_dec_error": 3.2,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 146.3,
+            "v_tan": 31.9,
+            "adopted": true,
+            "comments": null,
+            "reference": "NSC DR2"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L3",
+            "spectral_type_error": 2.0,
+            "spectral_type_number": 13.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2022-05-18T00:00:00",
+            "comments": "Calamari, Hamlet",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

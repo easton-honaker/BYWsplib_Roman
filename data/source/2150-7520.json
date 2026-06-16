@@ -1,0 +1,149 @@
+{
+    "Sources": [
+        {
+            "source": "2150-7520",
+            "ra_deg": 327.5776984,
+            "dec_deg": -75.3483061,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "JF20",
+            "other_references": null,
+            "comments": "Flags: COMOVER; Notes: comoving with 2MASS J21501592-7520367 (L1); gaia data from companion; Spectral type from W2 mag and Gaia parallax, BYW Spitzer"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 18.7,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 27.6,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "2150-7520"
+        },
+        {
+            "other_name": "J215018.64-752053.9"
+        },
+        {
+            "other_name": "planetsam, Melina Th\u00c8venot"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 18.096,
+            "magnitude_error": 0.104,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 17.824,
+            "magnitude_error": 0.091,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.783,
+            "magnitude_error": 0.044,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 18.527,
+            "magnitude_error": 0.129,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 876.0,
+            "pm_ra_error": 45.0,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -278.0,
+            "pm_dec_error": 45.0,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 919.1,
+            "v_tan": 120.2,
+            "adopted": true,
+            "comments": null,
+            "reference": "JF20"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T8",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 28.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "JF20"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "JF20"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Magellan",
+            "instrument": "FIRE",
+            "mode": "Prism",
+            "observation_date": "2018-12-01T00:00:00",
+            "comments": "Faherty",
+            "reference": "JF20",
+            "other_references": null
+        }
+    ]
+}

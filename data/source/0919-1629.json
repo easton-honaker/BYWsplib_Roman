@@ -1,0 +1,204 @@
+{
+    "Sources": [
+        {
+            "source": "0919-1629",
+            "ra_deg": 139.8269612,
+            "dec_deg": -16.497527,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": "Azul",
+            "comments": "Comment: betwen templ; Flags: YMG"
+        }
+    ],
+    "Associations": [
+        {
+            "association": "ARG",
+            "membership_probability": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_distance",
+            "value": 48.2,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "BetaSigma",
+            "parameter": "bayes_prob",
+            "value": 99.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 67.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 54.3,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0919-1629"
+        },
+        {
+            "other_name": "J091918.47-162951.0"
+        },
+        {
+            "other_name": "wpendrill, Melina T"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 15.976,
+            "magnitude_error": 0.234,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "2MASS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 16.87,
+            "magnitude_error": 0.018,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 15.223,
+            "magnitude_error": 0.017,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.615,
+            "magnitude_error": 0.017,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 14.286,
+            "magnitude_error": 0.018,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 19.188,
+            "magnitude_error": 0.034,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "PS1",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -53.2,
+            "pm_ra_error": 8.9,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -14.9,
+            "pm_dec_error": 8.9,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 55.3,
+            "v_tan": 14.2,
+            "adopted": true,
+            "comments": null,
+            "reference": "PS1 (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L3b-L6b",
+            "spectral_type_error": 3.0,
+            "spectral_type_number": 14.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "y",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2020-12-22T00:00:00",
+            "comments": "Faherty, Calamari",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

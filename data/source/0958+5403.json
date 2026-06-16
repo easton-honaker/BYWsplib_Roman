@@ -1,0 +1,149 @@
+{
+    "Sources": [
+        {
+            "source": "0958+5403",
+            "ra_deg": 149.7291715,
+            "dec_deg": 54.0515265,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "SK24",
+            "other_references": null,
+            "comments": "Flags: COLOR_OUTLIER; Notes: Also a COLOR_OUTLIER!"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 32.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 34.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0958+5403"
+        },
+        {
+            "other_name": "J095855.00+540305.4"
+        },
+        {
+            "other_name": "touches, stevnbak, NicholastheElder, Arttu Sainio, Sam Goodman, Tom Bickle, Borvo"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 17.072,
+            "magnitude_error": 0.023,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 16.996,
+            "magnitude_error": 0.042,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.269,
+            "magnitude_error": 0.03,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 19.866,
+            "magnitude_error": 0.056,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "PS1",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -545.6,
+            "pm_ra_error": 29.3,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -373.7,
+            "pm_dec_error": 27.6,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 661.2,
+            "v_tan": 109.0,
+            "adopted": true,
+            "comments": null,
+            "reference": "unTimely (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T6",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 26.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2022-01-18T00:00:00",
+            "comments": "Faherty & Calamari",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

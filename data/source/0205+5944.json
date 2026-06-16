@@ -1,0 +1,172 @@
+{
+    "Sources": [
+        {
+            "source": "0205+5944",
+            "ra_deg": 31.4092045,
+            "dec_deg": 59.7478431,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "AR24",
+            "other_references": null,
+            "comments": "extra2: same 2022 spectrum of M8 secondary. good colors, nothing to add; Flags: COMOVER; Notes: comoving companion to NLTT 6937 (both in Gaia), blended -- WISE data comes from primary (which is why distance is not correct)"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 93.7,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 11.7,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0205+5944"
+        },
+        {
+            "other_name": "J020538.20+594452.2"
+        },
+        {
+            "other_name": "Sam Goodman, JBELL37"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 21.581,
+            "parallax_error": 0.323,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "GaiaDR3"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 13.92,
+            "magnitude_error": 0.004,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 14.476,
+            "magnitude_error": 0.004,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 13.411,
+            "magnitude_error": 0.005,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 9.805,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 9.642,
+            "magnitude_error": 0.008,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 241.5,
+            "pm_ra_error": 0.3,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 64.7,
+            "pm_dec_error": 0.4,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 250.0,
+            "v_tan": 54.9,
+            "adopted": true,
+            "comments": null,
+            "reference": "GaiaDR3"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "M8",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 8.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "AR24"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "AR24"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "IRTF",
+            "instrument": "SpeX",
+            "mode": "Prism",
+            "observation_date": "2022-01-08T00:00:00",
+            "comments": "Faherty",
+            "reference": "AR24",
+            "other_references": null
+        }
+    ]
+}

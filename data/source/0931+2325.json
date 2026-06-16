@@ -1,0 +1,149 @@
+{
+    "Sources": [
+        {
+            "source": "0931+2325",
+            "ra_deg": 142.7958947,
+            "dec_deg": 23.4170218,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "AM20a",
+            "other_references": null,
+            "comments": "Notes: catWISE Spitzer. Previously a YMG candidate but not anymore."
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 38.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 32.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0931+2325"
+        },
+        {
+            "other_name": "J093111.01+232501.2"
+        },
+        {
+            "other_name": "zbyszek_w, Arttu Sainio, Tom Bickle, Melina Thevenot"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 19.239,
+            "magnitude_error": 0.316,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 18.534,
+            "magnitude_error": 0.102,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS DR3",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 18.659,
+            "magnitude_error": 0.238,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.706,
+            "magnitude_error": 0.056,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -288.0,
+            "pm_ra_error": 17.7,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -442.4,
+            "pm_dec_error": 17.7,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 527.9,
+            "v_tan": 81.3,
+            "adopted": true,
+            "comments": null,
+            "reference": "UHS (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T7",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 27.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2022-01-23T00:00:00",
+            "comments": "Burgasser et al.",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "Sources": [
+        {
+            "source": "2332-3018",
+            "ra_deg": 353.1170653,
+            "dec_deg": -30.3088588,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": null,
+            "comments": "Flags: POSSIBLE_Y; Notes: Also YMG; Attempted with FIRE by Popinchalk"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 35.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 38.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "2332-3018"
+        },
+        {
+            "other_name": "J233228.09-301831.8"
+        },
+        {
+            "other_name": "telmahsel, NibiruX, Arttu Sainio, Tom Bickle, Borvo"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 17.104,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VIKING",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 17.116,
+            "magnitude_error": 0.007,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VIKING",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 17.142,
+            "magnitude_error": 0.035,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VIKING",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 16.972,
+            "magnitude_error": 0.051,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.295,
+            "magnitude_error": 0.036,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 18.17,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VIKING",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 625.0,
+            "pm_ra_error": 6.5,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -472.3,
+            "pm_dec_error": 6.5,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 783.4,
+            "v_tan": 142.5,
+            "adopted": true,
+            "comments": null,
+            "reference": "VIKING (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T5",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 25.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2020-07-07T00:00:00",
+            "comments": "Burgasser, Theissen, Gerasimov",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

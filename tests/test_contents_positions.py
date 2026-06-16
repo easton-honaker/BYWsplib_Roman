@@ -1,32 +1,20 @@
 """
-Functions to test the contents of the Positions table.
+Tests for the Positions table.
+This table was not part of the astrodb-template-db schema.
+As data is added, update n_entries to reflect the expected count.
 """
 
-from sqlalchemy import or_
 
-
-def test_positions(db):
-    # Test that Positions has expected number of entries
-    t = db.query(db.Positions.c.source).astropy()
-    n_positions = 1
-    assert len(t) == n_positions, f"Found {len(t)} entries in the Positions table, expected {n_positions}"
-
-
-def test_for_valid_coordinates(db):
-    # Verify that all sources have valid coordinates
-    t = (
-        db.query(db.Positions.c.source, db.Positions.c.ra_deg, db.Positions.c.dec_deg)
-        .filter(
-            or_(
-                db.Positions.c.ra_deg.is_(None),
-                db.Positions.c.ra_deg < 0,
-                db.Positions.c.ra_deg > 360,
-                db.Positions.c.dec_deg.is_(None),
-                db.Positions.c.dec_deg < -90,
-                db.Positions.c.dec_deg > 90,
-            )
-        )
-        .astropy()
+def test_positions_table_exists(db):
+    """Confirm Positions was created in the database."""
+    assert "Positions" in db.metadata.tables.keys(), (
+        "Positions table not found — check that schema.yaml includes it"
     )
 
-    assert len(t) == 0, f"{len(t)} Positions failed coordinate checks: {t}"
+
+def test_positions_count(db):
+    """Fresh database should have 0 entries in Positions."""
+    n_entries = db.query(db.Positions).count()
+    assert n_entries == 0, (
+        f"Found {n_entries} entries in Positions, expected 0 (empty database)"
+    )

@@ -1,0 +1,137 @@
+{
+    "Sources": [
+        {
+            "source": "0305-5826",
+            "ra_deg": 46.3910595,
+            "dec_deg": -58.4435674,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "AM20b",
+            "other_references": null,
+            "comments": "Comment: chekc scaling; extra2: same 2018 spec, no additional comments. decent colors; Notes: potential companion in VHS images, BYW Spitzer"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 14.1,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 19.3,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0305-5826"
+        },
+        {
+            "other_name": "J030533.85-582636.8"
+        },
+        {
+            "other_name": "touches, NibiruX, guyepeak (Kenneth Hinckley), Austin Rothermich, Arttu Sainio"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 19.104,
+            "magnitude_error": 0.065,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 18.105,
+            "magnitude_error": 0.086,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.541,
+            "magnitude_error": 0.029,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -326.2,
+            "pm_ra_error": 34.6,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -205.7,
+            "pm_dec_error": 36.2,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 385.6,
+            "v_tan": 35.2,
+            "adopted": true,
+            "comments": null,
+            "reference": "unTimely (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T8",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 27.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "AM20b"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "AM20b"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Magellan",
+            "instrument": "FIRE",
+            "mode": "Prism",
+            "observation_date": "2018-12-01T00:00:00",
+            "comments": "Faherty",
+            "reference": "AM20b",
+            "other_references": null
+        }
+    ]
+}

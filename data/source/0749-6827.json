@@ -1,0 +1,149 @@
+{
+    "Sources": [
+        {
+            "source": "0749-6827",
+            "ra_deg": 117.4842026,
+            "dec_deg": -68.4562254,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "RG12",
+            "other_references": null,
+            "comments": "extra2: 2017 spec, no issue. keep for color; Notes: JG obtained a FIRE Echelle spectrum on Feb 3 2018 and measured RV = -9.6 \u00b1 3.9 km/s; killing any young membership possibility (both AB Dor and Beta Pic were possibilities given its PM). Proper motion was measured by Dan.. Previously a YMG candidate but not anymore."
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 15.1,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 21.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0749-6827"
+        },
+        {
+            "other_name": "J074956.20-682722.4"
+        },
+        {
+            "other_name": "planetsam, NibiruX, Tom Bickle"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 17.629,
+            "magnitude_error": 0.043,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 17.907,
+            "magnitude_error": 0.291,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "VHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 16.953,
+            "magnitude_error": 0.034,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 15.231,
+            "magnitude_error": 0.022,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -232.6,
+            "pm_ra_error": 18.3,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 357.0,
+            "pm_dec_error": 19.1,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 426.1,
+            "v_tan": 43.2,
+            "adopted": true,
+            "comments": null,
+            "reference": "unTimely (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T8",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 28.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "JDK21"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "JDK21"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Magellan",
+            "instrument": "FIRE",
+            "mode": "Prism",
+            "observation_date": "2017-12-03T00:00:00",
+            "comments": "Schwabb; Gonzales; Gagne",
+            "reference": "JDK21",
+            "other_references": null
+        }
+    ]
+}

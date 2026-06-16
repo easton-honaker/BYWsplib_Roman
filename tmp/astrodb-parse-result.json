@@ -1,0 +1,9 @@
+{
+  "file_path": "/Users/eastonhonaker/Documents/GitHub/BYWsplib_Roman/data/BYWsplib_merged.csv",
+  "reader": "astropy",
+  "format": "csv",
+  "pandas_method": null,
+  "n_rows": 258,
+  "output_md": "/Users/eastonhonaker/Documents/GitHub/BYWsplib_Roman/data/BYWsplib_merged-parsed-data-table/BYWsplib_merged-parsed-data-table.md",
+  "output_html": "/Users/eastonhonaker/Documents/GitHub/BYWsplib_Roman/data/BYWsplib_merged-parsed-data-table/BYWsplib_merged-parsed-data-table.html"
+}

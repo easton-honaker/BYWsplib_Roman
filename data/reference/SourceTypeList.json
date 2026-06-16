@@ -1,14 +1,318 @@
 [
     {
-        "source_type": "dIrr",
-        "comments": "Dwarf irregular galaxy"
+        "source_type": "b",
+        "comments": null
+    },
+    {
+        "source_type": "d",
+        "comments": null
+    },
+    {
+        "source_type": "sd",
+        "comments": null
+    },
+    {
+        "source_type": "y",
+        "comments": null
+    },
+    {
+        "source_type": "L0",
+        "comments": null
+    },
+    {
+        "source_type": "L0.5",
+        "comments": null
+    },
+    {
+        "source_type": "L0beta",
+        "comments": null
+    },
+    {
+        "source_type": "L1",
+        "comments": null
+    },
+    {
+        "source_type": "L1.5",
+        "comments": null
+    },
+    {
+        "source_type": "L1beta",
+        "comments": null
+    },
+    {
+        "source_type": "L2",
+        "comments": null
+    },
+    {
+        "source_type": "L2.5",
+        "comments": null
+    },
+    {
+        "source_type": "L2beta",
+        "comments": null
+    },
+    {
+        "source_type": "L3",
+        "comments": null
+    },
+    {
+        "source_type": "L3.5",
+        "comments": null
+    },
+    {
+        "source_type": "L3b-L6b",
+        "comments": null
+    },
+    {
+        "source_type": "L3beta",
+        "comments": null
+    },
+    {
+        "source_type": "L3gamma",
+        "comments": null
+    },
+    {
+        "source_type": "L4",
+        "comments": null
+    },
+    {
+        "source_type": "L4.5",
+        "comments": null
+    },
+    {
+        "source_type": "L4gamma",
+        "comments": null
+    },
+    {
+        "source_type": "L5",
+        "comments": null
+    },
+    {
+        "source_type": "L5beta",
+        "comments": null
+    },
+    {
+        "source_type": "L6",
+        "comments": null
+    },
+    {
+        "source_type": "L6beta",
+        "comments": null
+    },
+    {
+        "source_type": "L6gamma",
+        "comments": null
+    },
+    {
+        "source_type": "L7",
+        "comments": null
+    },
+    {
+        "source_type": "L7.0",
+        "comments": null
+    },
+    {
+        "source_type": "L7.5",
+        "comments": null
+    },
+    {
+        "source_type": "L8",
+        "comments": null
+    },
+    {
+        "source_type": "L8.5",
+        "comments": null
+    },
+    {
+        "source_type": "L9",
+        "comments": null
+    },
+    {
+        "source_type": "L9.5",
+        "comments": null
+    },
+    {
+        "source_type": "L9gamma",
+        "comments": null
+    },
+    {
+        "source_type": "M4",
+        "comments": null
+    },
+    {
+        "source_type": "M6.5",
+        "comments": null
+    },
+    {
+        "source_type": "M7",
+        "comments": null
+    },
+    {
+        "source_type": "M7gamma",
+        "comments": null
+    },
+    {
+        "source_type": "M8",
+        "comments": null
     },
     {
         "source_type": "M9",
-        "comments": "M9 dwarf"
+        "comments": null
+    },
+    {
+        "source_type": "M9.5",
+        "comments": null
+    },
+    {
+        "source_type": "M9gamma",
+        "comments": null
+    },
+    {
+        "source_type": "T0",
+        "comments": null
+    },
+    {
+        "source_type": "T0.0",
+        "comments": null
+    },
+    {
+        "source_type": "T1",
+        "comments": null
+    },
+    {
+        "source_type": "T1.5",
+        "comments": null
+    },
+    {
+        "source_type": "T2",
+        "comments": null
+    },
+    {
+        "source_type": "T2.5",
+        "comments": null
+    },
+    {
+        "source_type": "T3",
+        "comments": null
+    },
+    {
+        "source_type": "T4",
+        "comments": null
+    },
+    {
+        "source_type": "T4.0",
+        "comments": null
+    },
+    {
+        "source_type": "T4.5",
+        "comments": null
+    },
+    {
+        "source_type": "T5",
+        "comments": null
+    },
+    {
+        "source_type": "T5.5",
+        "comments": null
+    },
+    {
+        "source_type": "T6",
+        "comments": null
+    },
+    {
+        "source_type": "T6.5",
+        "comments": null
     },
     {
         "source_type": "T7",
-        "comments": "T7 dwarf"
+        "comments": null
+    },
+    {
+        "source_type": "T8",
+        "comments": null
+    },
+    {
+        "source_type": "T8.5",
+        "comments": null
+    },
+    {
+        "source_type": "T9.0",
+        "comments": null
+    },
+    {
+        "source_type": "Y0",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdL0",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdL1",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdL7",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdL8",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdL9",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdM8",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdT4",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdT7.5",
+        "comments": null
+    },
+    {
+        "source_type": "d/sdT9",
+        "comments": null
+    },
+    {
+        "source_type": "sdL0",
+        "comments": null
+    },
+    {
+        "source_type": "sdL3",
+        "comments": null
+    },
+    {
+        "source_type": "sdL9",
+        "comments": null
+    },
+    {
+        "source_type": "sdM5",
+        "comments": null
+    },
+    {
+        "source_type": "sdM7.5",
+        "comments": null
+    },
+    {
+        "source_type": "sdM9.5",
+        "comments": null
+    },
+    {
+        "source_type": "sdT4",
+        "comments": null
+    },
+    {
+        "source_type": "sdT5.5",
+        "comments": null
+    },
+    {
+        "source_type": "sdT7",
+        "comments": null
     }
 ]

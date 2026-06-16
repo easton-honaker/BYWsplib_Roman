@@ -1,0 +1,137 @@
+{
+    "Sources": [
+        {
+            "source": "0451+4029",
+            "ra_deg": 72.8367532,
+            "dec_deg": 40.4924762,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "EastonH",
+            "other_references": "Azul",
+            "comments": "Comment: check ind"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0451+4029"
+        },
+        {
+            "other_name": "Dan Caselden, Tom Bickle"
+        },
+        {
+            "other_name": "J045120.82+402932.9"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 17.357,
+            "magnitude_error": 0.049,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS GPS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 18.938,
+            "magnitude_error": 0.126,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS GPS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 16.441,
+            "magnitude_error": 0.031,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS GPS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.925,
+            "magnitude_error": 0.018,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 14.37,
+            "magnitude_error": 0.019,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 41.7,
+            "pm_ra_error": 4.7,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -87.2,
+            "pm_dec_error": 4.7,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 96.7,
+            "v_tan": 0.0,
+            "adopted": true,
+            "comments": null,
+            "reference": "UKIDSS GPS"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L4gamma",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 14.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "EastonH"
+        },
+        {
+            "source_type": "y",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2023-12-27T00:00:00",
+            "comments": "Burgasser",
+            "reference": "EastonH",
+            "other_references": null
+        }
+    ]
+}

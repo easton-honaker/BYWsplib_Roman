@@ -1,0 +1,137 @@
+{
+    "Sources": [
+        {
+            "source": "1055+5443",
+            "ra_deg": 163.8004937,
+            "dec_deg": 54.7245505,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "RG12",
+            "other_references": "Azul",
+            "comments": "extra2: single obj paper, keep for color; Notes: SpT estimate does not match prelim parallax from Davy.  Changing from T7.5 to T9 to up priority (Adam)"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 8.4,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "1055+5443"
+        },
+        {
+            "other_name": "J105512.11+544328.3"
+        },
+        {
+            "other_name": "touches, planetsam"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 145.0,
+            "parallax_error": 14.7,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Kirk21"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "J",
+            "magnitude": 19.446,
+            "magnitude_error": 0.0,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UHS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 17.332,
+            "magnitude_error": 0.082,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 14.371,
+            "magnitude_error": 0.018,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -1518.7,
+            "pm_ra_error": 2.1,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -222.7,
+            "pm_dec_error": 2.0,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 1534.9,
+            "v_tan": 50.2,
+            "adopted": true,
+            "comments": null,
+            "reference": "Kirk21"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "Y0",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 30.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "GR23"
+        },
+        {
+            "source_type": "d",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "GR23"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2021-02-24T00:00:00",
+            "comments": "Burgasser",
+            "reference": "GR23",
+            "other_references": null
+        }
+    ]
+}

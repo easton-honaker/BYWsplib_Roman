@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AstroDB Schema Match — BYWsplib_merged.csv</title>
+<style>
+  body { font-family: sans-serif; max-width: 1200px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+  h1 { font-size: 1.5em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.15em; margin-top: 2em; border-bottom: 2px solid #aaa; padding-bottom: 0.3em; }
+  h3 { font-size: 1em; margin-top: 1.2em; }
+  p.meta { color: #555; font-size: 0.88em; margin-top: 0; }
+  .legend { background: #f7f7f7; border: 1px solid #ddd; padding: 0.6em 1em; border-radius: 6px; font-size: 0.85em; margin: 1em 0; display: flex; gap: 2em; flex-wrap: wrap; }
+  .legend span { display: flex; align-items: center; gap: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85em; }
+  th, td { padding: 7px 10px; border: 1px solid #ddd; vertical-align: top; }
+  th { background: #2c3e50; color: #fff; position: sticky; top: 0; }
+  code.input { background: #e8edf2; border-radius: 4px; padding: 2px 6px; font-family: monospace; }
+  code.field { background: #e8f4e8; border-radius: 4px; padding: 2px 6px; font-family: monospace; }
+  .db-table { font-weight: 600; }
+  .notes { font-size: 0.8em; color: #555; }
+  .high   { background: #f0fff0; }
+  .medium { background: #fffbea; }
+  .low    { background: #fff3f0; }
+  .skip   { background: #f5f5f5; color: #888; }
+  .warn   { color: #c0392b; font-weight: bold; }
+  .lookup-table th { background: #f0a500; color: #fff; position: static; }
+  .conv-table th   { background: #2980b9; color: #fff; position: static; }
+  .unit-in  { color: #c0392b; font-weight: 600; }
+  .unit-out { color: #27ae60; font-weight: 600; }
+  em.unknown { color: #aaa; }
+  ul { padding-left: 1.5em; }
+  li { margin-bottom: 0.3em; }
+  .summary-box { background: #eef4fb; border-left: 4px solid #2c5f8a; padding: 0.6em 1em; margin: 1em 0; font-size: 0.88em; }
+</style>
+</head>
+<body>
+
+<h1>AstroDB Schema Match</h1>
+<p class="meta">Source: <strong>BYWsplib_merged.csv</strong> &nbsp;·&nbsp; 258 rows &nbsp;·&nbsp; 77 columns &nbsp;·&nbsp; 2026-06-15</p>
+
+<div class="legend">
+  <span><code class="input">column</code> = input column name (source file)</span>
+  <span><code class="field">field</code> = AstroDB schema field (destination)</span>
+  <span style="background:#f0fff0;padding:2px 8px;border-radius:4px;">🟢 High</span>
+  <span style="background:#fffbea;padding:2px 8px;border-radius:4px;">🟡 Medium</span>
+  <span style="background:#fff3f0;padding:2px 8px;border-radius:4px;">🔴 Low</span>
+  <span style="background:#f5f5f5;padding:2px 8px;border-radius:4px;">— Skip</span>
+</div>
+
+<div class="summary-box">
+  <strong>50 High</strong> &nbsp;|&nbsp; <strong>11 Medium</strong> &nbsp;|&nbsp; <strong>3 Low</strong> &nbsp;|&nbsp; <strong>26 Skip</strong> (flags, internal IDs, URL labels, redundant columns) &nbsp;|&nbsp; <strong>0 Unmatched</strong>
+</div>
+
+<table>
+<thead>
+<tr><th>#</th><th>Input Column</th><th>Description</th><th>Units</th><th>DB Table</th><th>DB Field</th><th>Confidence</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<!-- IDENTIFIERS -->
+<tr class="high"><td>1</td><td><code class="input">shortname</code></td><td>Coordinate-based short identifier</td><td>—</td><td class="db-table">→ Sources</td><td><code class="field">source</code></td><td>🟢 High</td><td>Primary key; unique per object</td></tr>
+<tr class="high"><td>2</td><td><code class="input">Jname</code></td><td>J-band designation from Reconcile coords</td><td>—</td><td class="db-table">→ Names</td><td><code class="field">other_name</code></td><td>🟢 High</td><td>Alternate name from discovery coordinates</td></tr>
+<tr class="skip"><td>3</td><td><code class="input">FINALNUM</code></td><td>Numerical spectral type (e.g. 27=T7)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Redundant with FINAL; internal use only</td></tr>
+<!-- SPECTRAL TYPES -->
+<tr class="high"><td>4</td><td><code class="input">FINAL</code></td><td>Final adopted spectral type string</td><td>—</td><td class="db-table">→ SourceTypes</td><td><code class="field">source_type</code></td><td>🟢 High</td><td>adopted=True; reference=Spec column</td></tr>
+<tr class="medium"><td>5</td><td><code class="input">Spt_unc</code></td><td>Spectral type uncertainty flag (int code)</td><td>—</td><td class="db-table">→ SourceTypes</td><td><code class="field">comments</code></td><td>🟡 Medium</td><td>Encode as "spt_unc=N" appended to SourceTypes comments</td></tr>
+<tr class="medium"><td>6</td><td><code class="input">TAGS</code></td><td>Category: d=dwarf, sd=subdwarf, y=young, b=binary</td><td>—</td><td class="db-table">→ SourceTypes</td><td><code class="field">source_type</code></td><td>🟡 Medium</td><td>Add separate SourceTypes rows per tag value</td></tr>
+<!-- INTERNAL FLAGS (SKIP) -->
+<tr class="skip"><td>7</td><td><code class="input">Code</code></td><td>Reconciliation code</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Filter already applied (all rows are non-skip)</td></tr>
+<tr class="medium"><td>8</td><td><code class="input">Comment</code></td><td>Free-form reconciliation comment</td><td>—</td><td class="db-table">→ Sources</td><td><code class="field">comments</code></td><td>🟡 Medium</td><td>Append to source comments if non-empty</td></tr>
+<tr class="skip"><td>9</td><td><code class="input">USEVERSION</code></td><td>Spectral version flag</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Internal processing flag</td></tr>
+<tr class="skip"><td>10</td><td><code class="input">USECOLOR</code></td><td>Color usage flag</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Internal processing flag</td></tr>
+<tr class="skip"><td>11</td><td><code class="input">Keep/Skip/maintain</code></td><td>Disposition flag</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Filter already applied</td></tr>
+<tr class="skip"><td>12</td><td><code class="input">extra1</code></td><td>Auxiliary reconciliation flag</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Values: "r" (review) — internal only</td></tr>
+<tr class="low"><td>13</td><td><code class="input">extra2</code></td><td>Auxiliary reconciliation notes</td><td>—</td><td class="db-table">→ Sources</td><td><code class="field">comments</code></td><td>🔴 Low</td><td>Contains binary/co-mover notes; append if non-empty</td></tr>
+<!-- REFERENCES -->
+<tr class="high"><td>14</td><td><code class="input">Disc</code></td><td>Discovery reference shortname</td><td>—</td><td class="db-table">→ Sources</td><td><code class="field">reference</code></td><td>🟢 High</td><td>FK→Publications; 31 unique refs</td></tr>
+<tr class="high"><td>15</td><td><code class="input">Spec</code></td><td>Spectroscopy reference shortname</td><td>—</td><td class="db-table">→ SourceTypes</td><td><code class="field">reference</code></td><td>🟢 High</td><td>FK→Publications; also Sources.other_references; 14 unique refs</td></tr>
+<tr class="skip"><td>16</td><td><code class="input">ID</code></td><td>Internal catalog integer ID</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Internal ID not needed in DB</td></tr>
+<tr class="skip"><td>17</td><td><code class="input">Priority</code></td><td>Processing priority flag (A/B/C/D/DONE)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Internal flag</td></tr>
+<tr class="skip"><td>18</td><td><code class="input">Type</code></td><td>Photometric SpT estimate (parenthetical)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Less precise than FINAL; redundant</td></tr>
+<!-- DISTANCES -->
+<tr class="high"><td>19</td><td><code class="input">Dist_J</code></td><td>Distance from J-band photometry</td><td class="unit-in">pc (string)</td><td class="db-table">→ ModeledParameters</td><td><code class="field">value</code></td><td>🟢 High</td><td>parameter="distance_J"; strip " pc" suffix; ref=Disc</td></tr>
+<tr class="high"><td>20</td><td><code class="input">Dist_W2</code></td><td>Distance from W2-band photometry</td><td class="unit-in">pc (string)</td><td class="db-table">→ ModeledParameters</td><td><code class="field">value</code></td><td>🟢 High</td><td>parameter="distance_W2"; strip " pc" suffix; ref=Disc</td></tr>
+<!-- COORDINATES -->
+<tr class="skip"><td>21</td><td><code class="input">RA SXG</code></td><td>Right ascension (sexagesimal)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Redundant — catWISE RA is decimal degrees (preferred)</td></tr>
+<tr class="skip"><td>22</td><td><code class="input">DE SXG</code></td><td>Declination (sexagesimal)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Redundant — catWISE Dec is decimal degrees (preferred)</td></tr>
+<tr class="high"><td>23</td><td><code class="input">Jdesignation</code></td><td>catWISE-coordinate J-designation</td><td>—</td><td class="db-table">→ Names</td><td><code class="field">other_name</code></td><td>🟢 High</td><td>Alternate name from catWISE coords</td></tr>
+<tr class="high"><td>24</td><td><code class="input">catWISE RA</code></td><td>Right ascension from catWISE, decimal degrees</td><td>deg</td><td class="db-table">→ Sources</td><td><code class="field">ra_deg</code></td><td>🟢 High</td><td>Primary coordinate column</td></tr>
+<tr class="high"><td>25</td><td><code class="input">catWISE Dec</code></td><td>Declination from catWISE, decimal degrees</td><td>deg</td><td class="db-table">→ Sources</td><td><code class="field">dec_deg</code></td><td>🟢 High</td><td>Primary coordinate column</td></tr>
+<!-- OPTICAL PHOTOMETRY -->
+<tr class="high"><td>26</td><td><code class="input">i</code></td><td>i-band magnitude (PS1 DR2)</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td>band=PAN-STARRS/PS1.i; ref=opt ref; regime=optical; cast int64→float64</td></tr>
+<tr class="high"><td>27</td><td><code class="input">ei</code></td><td>Uncertainty on i-band</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with i</td></tr>
+<tr class="high"><td>28</td><td><code class="input">z</code></td><td>z-band magnitude (PS1 DR2)</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td>band=PAN-STARRS/PS1.z; ref=opt ref; regime=optical</td></tr>
+<tr class="high"><td>29</td><td><code class="input">ez</code></td><td>Uncertainty on z-band</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with z</td></tr>
+<tr class="high"><td>30</td><td><code class="input">y</code></td><td>y-band magnitude (PS1 DR2)</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td>band=PAN-STARRS/PS1.y; ref=opt ref; regime=optical</td></tr>
+<tr class="high"><td>31</td><td><code class="input">ey</code></td><td>Uncertainty on y-band</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with y</td></tr>
+<tr class="high"><td>32</td><td><code class="input">opt ref</code></td><td>Optical photometry reference (always "PS1 DR2")</td><td>—</td><td class="db-table">→ Photometry</td><td><code class="field">reference</code></td><td>🟢 High</td><td>Shared ref for i, z, y; FK→Publications</td></tr>
+<!-- WISE PHOTOMETRY -->
+<tr class="high"><td>33</td><td><code class="input">W1</code></td><td>WISE W1 magnitude (3.4 µm)</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td>band=WISE/WISE.W1; ref=NIR ref; regime=mir</td></tr>
+<tr class="high"><td>34</td><td><code class="input">eW1</code></td><td>Uncertainty on W1</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with W1</td></tr>
+<tr class="high"><td>35</td><td><code class="input">W2</code></td><td>WISE W2 magnitude (4.6 µm)</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td>band=WISE/WISE.W2; ref=NIR ref; regime=mir</td></tr>
+<tr class="high"><td>36</td><td><code class="input">eW2</code></td><td>Uncertainty on W2</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with W2</td></tr>
+<!-- NIR PHOTOMETRY -->
+<tr class="high"><td>37</td><td><code class="input">Y</code></td><td>Y-band NIR magnitude</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td class="warn">⚠ band SVO ID depends on NIR ref per source: VHS/VIKING→Paranal/VIRCAM.Y</td></tr>
+<tr class="high"><td>38</td><td><code class="input">eY</code></td><td>Uncertainty on Y</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with Y</td></tr>
+<tr class="high"><td>39</td><td><code class="input">J</code></td><td>J-band NIR magnitude</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td class="warn">⚠ band SVO ID per NIR ref: VHS→Paranal/VIRCAM.J · UHS→UKIRT/WFCAM.J · 2MASS→2MASS/2MASS.J · UKIDSS→UKIRT/UKIDSS.J</td></tr>
+<tr class="high"><td>40</td><td><code class="input">eJ</code></td><td>Uncertainty on J</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with J</td></tr>
+<tr class="high"><td>41</td><td><code class="input">H</code></td><td>H-band NIR magnitude</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td class="warn">⚠ band SVO ID per NIR ref: VHS→Paranal/VIRCAM.H · 2MASS→2MASS/2MASS.H · UHS→UKIRT/WFCAM.H</td></tr>
+<tr class="high"><td>42</td><td><code class="input">eH</code></td><td>Uncertainty on H</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with H</td></tr>
+<tr class="high"><td>43</td><td><code class="input">K</code></td><td>K-band NIR magnitude</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude</code></td><td>🟢 High</td><td class="warn">⚠ band SVO ID per NIR ref: VHS→Paranal/VIRCAM.Ks · UHS→UKIRT/WFCAM.K · 2MASS→2MASS/2MASS.Ks</td></tr>
+<tr class="high"><td>44</td><td><code class="input">eK</code></td><td>Uncertainty on K</td><td>mag</td><td class="db-table">→ Photometry</td><td><code class="field">magnitude_error</code></td><td>🟢 High</td><td>Paired with K</td></tr>
+<tr class="medium"><td>45</td><td><code class="input">NIR ref</code></td><td>NIR photometry reference string</td><td>—</td><td class="db-table">→ Photometry</td><td><code class="field">reference</code></td><td>🟡 Medium</td><td class="warn">⚠ Per-band ref encoded in one string (e.g. "UHS DR3, 2MASS (H)") — must parse per band at ingest</td></tr>
+<!-- PARALLAX -->
+<tr class="high"><td>46</td><td><code class="input">plx</code></td><td>Parallax measurement</td><td>mas</td><td class="db-table">→ Parallaxes</td><td><code class="field">parallax_mas</code></td><td>🟢 High</td><td></td></tr>
+<tr class="high"><td>47</td><td><code class="input">eplx</code></td><td>Parallax uncertainty</td><td>mas</td><td class="db-table">→ Parallaxes</td><td><code class="field">parallax_error</code></td><td>🟢 High</td><td></td></tr>
+<tr class="high"><td>48</td><td><code class="input">plx_ref</code></td><td>Parallax reference</td><td>—</td><td class="db-table">→ Parallaxes</td><td><code class="field">reference</code></td><td>🟢 High</td><td>Values: GaiaDR3, Best20, Kirk21; FK→Publications</td></tr>
+<!-- PROPER MOTION -->
+<tr class="high"><td>49</td><td><code class="input">PMRA</code></td><td>Proper motion in RA×cos(Dec)</td><td>mas/yr</td><td class="db-table">→ ProperMotions</td><td><code class="field">pm_ra</code></td><td>🟢 High</td><td></td></tr>
+<tr class="high"><td>50</td><td><code class="input">ePMRA</code></td><td>Uncertainty on PMRA</td><td>mas/yr</td><td class="db-table">→ ProperMotions</td><td><code class="field">pm_ra_error</code></td><td>🟢 High</td><td></td></tr>
+<tr class="high"><td>51</td><td><code class="input">PMDE</code></td><td>Proper motion in declination</td><td>mas/yr</td><td class="db-table">→ ProperMotions</td><td><code class="field">pm_dec</code></td><td>🟢 High</td><td></td></tr>
+<tr class="high"><td>52</td><td><code class="input">ePMDE</code></td><td>Uncertainty on PMDE</td><td>mas/yr</td><td class="db-table">→ ProperMotions</td><td><code class="field">pm_dec_error</code></td><td>🟢 High</td><td></td></tr>
+<tr class="high"><td>53</td><td><code class="input">PM_ref</code></td><td>Proper motion reference</td><td>—</td><td class="db-table">→ ProperMotions</td><td><code class="field">reference</code></td><td>🟢 High</td><td>21 unique values; FK→Publications</td></tr>
+<!-- DERIVED KINEMATICS -->
+<tr class="medium"><td>54</td><td><code class="input">PMTot</code></td><td>Total proper motion magnitude</td><td>mas/yr</td><td class="db-table">→ ModeledParameters</td><td><code class="field">value</code></td><td>🟡 Medium</td><td>parameter="pm_total"; derived from PMRA+PMDE; ref=PM_ref</td></tr>
+<tr class="high"><td>55</td><td><code class="input">Vtan</code></td><td>Tangential velocity</td><td>km/s</td><td class="db-table">→ ModeledParameters</td><td><code class="field">value</code></td><td>🟢 High</td><td>parameter="v_tan"; unit="km/s"; ref=PM_ref</td></tr>
+<tr class="skip"><td>56</td><td><code class="input">Phototype</code></td><td>Photometric SpT (numerical, Goodstuff)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Redundant with FINALNUM/FINAL</td></tr>
+<!-- SPECTRAL TYPE FROM GOODSTUFF -->
+<tr class="high"><td>57</td><td><code class="input">Spectral Type</code></td><td>Spectral type from spectrum (Goodstuff col)</td><td>—</td><td class="db-table">→ SourceTypes</td><td><code class="field">source_type</code></td><td>🟢 High</td><td>adopted=False (FINAL is adopted); reference=Spec; skip if identical to FINAL</td></tr>
+<tr class="high"><td>58</td><td><code class="input">SpT_Comments</code></td><td>Notes on spectral type determination</td><td>—</td><td class="db-table">→ SourceTypes</td><td><code class="field">comments</code></td><td>🟢 High</td><td>Append to SourceTypes row for FINAL</td></tr>
+<!-- SPECTRA -->
+<tr class="medium"><td>59</td><td><code class="input">Spectrum Date</code></td><td>Observation date (YYMMDD float)</td><td>—</td><td class="db-table">→ Spectra</td><td><code class="field">observation_date</code></td><td>🟡 Medium</td><td>Convert YYMMDD→ISO date (e.g. 230629→2023-06-29)</td></tr>
+<tr class="high"><td>60</td><td><code class="input">Spectrum Instrument</code></td><td>Spectroscopy instrument name</td><td>—</td><td class="db-table">→ Spectra</td><td><code class="field">instrument</code></td><td>🟢 High</td><td>FK→Instruments; 7 unique instruments</td></tr>
+<tr class="medium"><td>61</td><td><code class="input">Spectrum Observers</code></td><td>Observer names string</td><td>—</td><td class="db-table">→ Spectra</td><td><code class="field">comments</code></td><td>🟡 Medium</td><td>No direct Spectra field; store as "observers: …"</td></tr>
+<!-- ALTERNATE NAMES -->
+<tr class="high"><td>62</td><td><code class="input">Submitted Name</code></td><td>Name submitted by discoverer/contributor</td><td>—</td><td class="db-table">→ Names</td><td><code class="field">other_name</code></td><td>🟢 High</td><td>Alternate name</td></tr>
+<!-- URL LABELS (SKIP) -->
+<tr class="skip"><td>63</td><td><code class="input">SIMBAD</code></td><td>SIMBAD link label</td><td>—</td><td>—</td><td>—</td><td>—</td><td>URL label, not data</td></tr>
+<tr class="skip"><td>64</td><td><code class="input">Vizier</code></td><td>VizieR link label</td><td>—</td><td>—</td><td>—</td><td>—</td><td>URL label, not data</td></tr>
+<tr class="skip"><td>65</td><td><code class="input">IRSA_Finder</code></td><td>IRSA finder chart label</td><td>—</td><td>—</td><td>—</td><td>—</td><td>URL label, not data</td></tr>
+<tr class="skip"><td>66</td><td><code class="input">GSA</code></td><td>GSA link label</td><td>—</td><td>—</td><td>—</td><td>—</td><td>URL label, not data</td></tr>
+<tr class="skip"><td>67</td><td><code class="input">wiseview</code></td><td>WISEView link label</td><td>—</td><td>—</td><td>—</td><td>—</td><td>URL label, not data</td></tr>
+<!-- BAYESIAN SIGMA COLUMNS -->
+<tr class="skip"><td>68</td><td><code class="input">BΣ_distance_Checkup</code></td><td>Bayesian distance check flag</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Quality flag; skip</td></tr>
+<tr class="medium"><td>69</td><td><code class="input">BΣ_distance</code></td><td>Bayesian sigma distance estimate</td><td>pc</td><td class="db-table">→ ModeledParameters</td><td><code class="field">value</code></td><td>🟡 Medium</td><td>parameter="bayes_distance"; unit="pc"</td></tr>
+<tr class="medium"><td>70</td><td><code class="input">BΣ_PROB</code></td><td>Bayesian distance probability</td><td>—</td><td class="db-table">→ ModeledParameters</td><td><code class="field">value</code></td><td>🟡 Medium</td><td>parameter="bayes_distance_prob"; unit="dimensionless"</td></tr>
+<tr class="medium"><td>71</td><td><code class="input">BΣ_YMGs</code></td><td>YMG memberships with probabilities</td><td>—</td><td class="db-table">→ Associations</td><td><code class="field">association</code></td><td>🟡 Medium</td><td class="warn">⚠ Format "ABDMG(88);OCTN(11)" — split on ";" into separate Associations rows; parse probability from parentheses→membership_probability</td></tr>
+<tr class="skip"><td>72</td><td><code class="input">BΣ_Hyp</code></td><td>Bayesian hypothesis string</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Internal flag; skip</td></tr>
+<!-- CATALOG METADATA -->
+<tr class="skip"><td>73</td><td><code class="input">Date Added</code></td><td>Date added to catalog (YYMMDD)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Catalog metadata; skip</td></tr>
+<tr class="skip"><td>74</td><td><code class="input">NumType</code></td><td>Numerical SpT from Goodstuff</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Redundant with FINALNUM</td></tr>
+<tr class="skip"><td>75</td><td><code class="input">In BASS UltraCool</code></td><td>BASS UltraCool catalog flag</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Catalog membership flag; skip</td></tr>
+<tr class="low"><td>76</td><td><code class="input">Flags</code></td><td>Special processing flags (e.g. COMOVER)</td><td>—</td><td class="db-table">→ Sources</td><td><code class="field">comments</code></td><td>🔴 Low</td><td>Append "flags: COMOVER" etc. to comments if non-empty</td></tr>
+<tr class="low"><td>77</td><td><code class="input">Notes</code></td><td>Free-form notes</td><td>—</td><td class="db-table">→ Sources</td><td><code class="field">comments</code></td><td>🔴 Low</td><td>Append to source comments if non-empty</td></tr>
+</tbody>
+</table>
+
+<!-- ==================== LOOKUP TABLE CHECKLIST ==================== -->
+<h2>Lookup Table Checklist</h2>
+<p>The following lookup tables need entries added before ingestion. Rows in data tables reference these by foreign key — inserting a row that references a missing lookup value will fail.</p>
+
+<h3>PhotometryFilters</h3>
+<table class="lookup-table">
+<thead><tr><th>band (SVO Filter ID)</th><th>Source column</th><th>Regime</th><th>Effective λ (Å)</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>PAN-STARRS/PS1.i</td><td>i</td><td>optical</td><td>~7520</td><td>opt ref = "PS1 DR2"; all optical phot from PS1</td></tr>
+<tr><td>PAN-STARRS/PS1.z</td><td>z</td><td>optical</td><td>~8660</td><td></td></tr>
+<tr><td>PAN-STARRS/PS1.y</td><td>y</td><td>optical</td><td>~9620</td><td></td></tr>
+<tr><td>WISE/WISE.W1</td><td>W1</td><td>mir</td><td>~33526</td><td>Standard; likely already present in template DB</td></tr>
+<tr><td>WISE/WISE.W2</td><td>W2</td><td>mir</td><td>~46028</td><td>Standard; likely already present in template DB</td></tr>
+<tr><td>Paranal/VIRCAM.Y</td><td>Y</td><td>nir</td><td>~10210</td><td>For sources with NIR ref containing "VHS" or "VIKING"</td></tr>
+<tr><td>Paranal/VIRCAM.J</td><td>J</td><td>nir</td><td>~12480</td><td>For sources with NIR ref containing "VHS" or "VIKING"</td></tr>
+<tr><td>Paranal/VIRCAM.H</td><td>H</td><td>nir</td><td>~16310</td><td>For sources with NIR ref containing "VHS"</td></tr>
+<tr><td>Paranal/VIRCAM.Ks</td><td>K</td><td>nir</td><td>~21410</td><td>For sources with NIR ref containing "VHS" or "VIKING"</td></tr>
+<tr><td>UKIRT/WFCAM.J</td><td>J</td><td>nir</td><td>~12500</td><td>For sources with NIR ref containing "UHS"</td></tr>
+<tr><td>UKIRT/WFCAM.H</td><td>H</td><td>nir</td><td>~16340</td><td>For sources with NIR ref containing "UHS"</td></tr>
+<tr><td>UKIRT/WFCAM.K</td><td>K</td><td>nir</td><td>~22070</td><td>For sources with NIR ref containing "UHS"</td></tr>
+<tr><td>UKIRT/UKIDSS.J</td><td>J</td><td>nir</td><td>~12500</td><td>For sources with NIR ref containing "UKIDSS LAS/GCS/GPS"</td></tr>
+<tr><td>UKIRT/UKIDSS.H</td><td>H</td><td>nir</td><td>~16340</td><td>For sources with NIR ref containing "UKIDSS"</td></tr>
+<tr><td>UKIRT/UKIDSS.K</td><td>K</td><td>nir</td><td>~22070</td><td>For sources with NIR ref containing "UKIDSS"</td></tr>
+<tr><td>2MASS/2MASS.J</td><td>J</td><td>nir</td><td>~12350</td><td>For sources with NIR ref containing "2MASS" (non-reject)</td></tr>
+<tr><td>2MASS/2MASS.H</td><td>H</td><td>nir</td><td>~16620</td><td>For sources with NIR ref containing "2MASS (H)"</td></tr>
+<tr><td>2MASS/2MASS.Ks</td><td>K</td><td>nir</td><td>~21590</td><td>For sources with NIR ref containing "2MASS"</td></tr>
+</tbody>
+</table>
+<p><em>Note: NIR band SVO IDs must be resolved per-source per-band at ingestion time based on the NIR ref string. "2MASS reject" entries should be skipped.</em></p>
+
+<h3>ParameterList</h3>
+<table class="lookup-table">
+<thead><tr><th>parameter</th><th>description</th></tr></thead>
+<tbody>
+<tr><td>distance_J</td><td>Photometric distance estimated from J-band magnitude (pc)</td></tr>
+<tr><td>distance_W2</td><td>Photometric distance estimated from W2-band magnitude (pc)</td></tr>
+<tr><td>v_tan</td><td>Tangential velocity computed from parallax and proper motion (km/s)</td></tr>
+<tr><td>pm_total</td><td>Total proper motion magnitude sqrt(PMRA²+PMDE²) (mas/yr)</td></tr>
+<tr><td>bayes_distance</td><td>Bayesian sigma distance estimate (pc)</td></tr>
+<tr><td>bayes_distance_prob</td><td>Bayesian distance field membership probability (dimensionless 0–100)</td></tr>
+</tbody>
+</table>
+
+<h3>SourceTypeList</h3>
+<table class="lookup-table">
+<thead><tr><th>source_type</th><th>comments</th></tr></thead>
+<tbody>
+<tr><td>dwarf</td><td>From TAGS=d; field-age brown dwarf</td></tr>
+<tr><td>subdwarf</td><td>From TAGS=sd; metal-poor subdwarf</td></tr>
+<tr><td>young</td><td>From TAGS=y; low-gravity/youth indicator</td></tr>
+<tr><td>binary</td><td>From TAGS=b; known or suspected binary</td></tr>
+<tr><td colspan="2"><em>+ all unique FINAL spectral type values (L0, L0.5, L0beta, L1, T5, T7, etc.) — ~50+ entries</em></td></tr>
+</tbody>
+</table>
+
+<h3>RegimeList</h3>
+<table class="lookup-table">
+<thead><tr><th>regime</th><th>description</th></tr></thead>
+<tbody>
+<tr><td>optical</td><td>Optical wavelengths; i, z, y PS1 bands</td></tr>
+<tr><td>nir</td><td>Near-infrared; Y, J, H, K bands</td></tr>
+<tr><td>mir</td><td>Mid-infrared; WISE W1, W2 bands</td></tr>
+</tbody>
+</table>
+
+<h3>Telescopes</h3>
+<table class="lookup-table">
+<thead><tr><th>telescope</th><th>description</th></tr></thead>
+<tbody>
+<tr><td>Pan-STARRS</td><td>Panoramic Survey Telescope and Rapid Response System (PS1)</td></tr>
+<tr><td>WISE</td><td>Wide-field Infrared Survey Explorer</td></tr>
+<tr><td>VISTA</td><td>Visible and Infrared Survey Telescope for Astronomy (ESO, VHS/VIKING surveys)</td></tr>
+<tr><td>UKIRT</td><td>United Kingdom Infrared Telescope (UHS/UKIDSS surveys)</td></tr>
+<tr><td>2MASS</td><td>Two Micron All Sky Survey</td></tr>
+<tr><td>Magellan</td><td>Magellan Baade/Clay Telescopes (Las Campanas) — FIRE Prism/Echelle</td></tr>
+<tr><td>IRTF</td><td>NASA Infrared Telescope Facility — SpeX</td></tr>
+<tr><td>APO</td><td>Apache Point Observatory 3.5m — Triplespec</td></tr>
+<tr><td>Keck</td><td>W. M. Keck Observatory — NIRES</td></tr>
+<tr><td>DCT</td><td>Discovery Channel Telescope (now LDT) — NIHTS</td></tr>
+<tr><td><em class="unknown">unknown — fill in</em></td><td>ArcoIRIS instrument host telescope</td></tr>
+</tbody>
+</table>
+
+<h3>Instruments</h3>
+<table class="lookup-table">
+<thead><tr><th>instrument</th><th>mode</th><th>telescope</th><th>description</th></tr></thead>
+<tbody>
+<tr><td>FIRE</td><td>Prism</td><td>Magellan</td><td>Folded-port InfraRed Echellette, prism mode</td></tr>
+<tr><td>FIRE</td><td>Echelle</td><td>Magellan</td><td>Folded-port InfraRed Echellette, echelle mode</td></tr>
+<tr><td>SpeX</td><td>Prism</td><td>IRTF</td><td>SpeX spectrograph prism mode</td></tr>
+<tr><td>Triplespec</td><td><em class="unknown">unknown — fill in</em></td><td>APO</td><td>Apache Point Observatory Triplespec</td></tr>
+<tr><td>NIRES</td><td><em class="unknown">unknown — fill in</em></td><td>Keck</td><td>Keck Near-Infrared Echellette Spectrometer</td></tr>
+<tr><td>ArcoIRIS</td><td><em class="unknown">unknown — fill in</em></td><td><em class="unknown">unknown — fill in</em></td><td>ARCoIRIS spectrograph</td></tr>
+<tr><td>NIHTS</td><td><em class="unknown">unknown — fill in</em></td><td>DCT</td><td>Near-Infrared High Throughput Spectrograph</td></tr>
+</tbody>
+</table>
+
+<h3>AssociationList</h3>
+<table class="lookup-table">
+<thead><tr><th>association</th><th>association_type</th><th>reference</th></tr></thead>
+<tbody>
+<tr><td>ABDMG</td><td>YMG</td><td><em class="unknown">unknown — fill in</em></td></tr>
+<tr><td>BPMG</td><td>YMG</td><td><em class="unknown">unknown — fill in</em></td></tr>
+<tr><td>COL</td><td>YMG</td><td><em class="unknown">unknown — fill in</em></td></tr>
+<tr><td>CUMA</td><td>YMG</td><td><em class="unknown">unknown — fill in</em></td></tr>
+<tr><td>ARG</td><td>YMG</td><td><em class="unknown">unknown — fill in</em></td></tr>
+<tr><td>OCTN</td><td>YMG</td><td><em class="unknown">unknown — fill in</em></td></tr>
+<tr><td>CRIUS198</td><td>YMG</td><td><em class="unknown">unknown — fill in</em></td></tr>
+<tr><td colspan="3"><em>+ additional YMG names from BΣ_YMGs column — enumerate all unique values at ingestion time</em></td></tr>
+</tbody>
+</table>
+
+<!-- ==================== UNIT CONVERSIONS ==================== -->
+<h2>Unit Conversions</h2>
+<p>These columns require conversion before ingestion — the DB field expects different units than the source data provides.</p>
+<table class="conv-table">
+<thead><tr><th>Column</th><th>Input Units</th><th>DB Field</th><th>Required Units</th><th>Conversion</th></tr></thead>
+<tbody>
+<tr><td><code class="input">Dist_J</code></td><td class="unit-in">string "32.9 pc"</td><td><code class="field">ModeledParameters.value</code></td><td class="unit-out">float (pc)</td><td>float(value.replace(" pc",""))</td></tr>
+<tr><td><code class="input">Dist_W2</code></td><td class="unit-in">string "34.8 pc"</td><td><code class="field">ModeledParameters.value</code></td><td class="unit-out">float (pc)</td><td>float(value.replace(" pc",""))</td></tr>
+<tr><td><code class="input">Spectrum Date</code></td><td class="unit-in">float YYMMDD (e.g. 230629.0)</td><td><code class="field">Spectra.observation_date</code></td><td class="unit-out">ISO string</td><td>int→str: "230629"→"2023-06-29"</td></tr>
+<tr><td><code class="input">i</code></td><td class="unit-in">int64</td><td><code class="field">Photometry.magnitude</code></td><td class="unit-out">float64</td><td>Cast to float; NaN where missing</td></tr>
+</tbody>
+</table>
+
+<!-- ==================== INGESTION NOTES ==================== -->
+<h2>Ingestion Notes</h2>
+<ul>
+  <li><strong>Photometry fan-out:</strong> Each source row in the CSV expands to up to 9 Photometry rows (i, z, y, W1, W2, Y, J, H, K) — only insert rows where the magnitude is non-null.</li>
+  <li><strong>NIR band SVO ID resolution:</strong> The <code class="input">NIR ref</code> string encodes per-band survey sources. The ingestion script must parse this string to assign the correct SVO filter ID per band. "2MASS reject" values should be excluded. Bands from different surveys in the same source will generate separate Photometry rows with different <code class="field">band</code> values.</li>
+  <li><strong>Dual spectral type rows:</strong> Both FINAL and "Spectral Type" map to SourceTypes. Ingest FINAL as adopted=True. Skip "Spectral Type" if it is identical to FINAL. Otherwise ingest as adopted=False with the same reference.</li>
+  <li><strong>BΣ_YMGs multi-value parsing:</strong> Split on ";" to get individual association+probability tokens. Parse probability from parentheses (e.g. "ABDMG(88)" → association="ABDMG", membership_probability=0.88). Insert one Associations row per token per source.</li>
+  <li><strong>Duplicate RA/Dec columns:</strong> Use <code class="input">catWISE RA</code>/<code class="input">catWISE Dec</code> for Sources. Skip <code class="input">RA SXG</code>/<code class="input">DE SXG</code>.</li>
+  <li><strong>Disc column contains comma-separated values</strong> (e.g. "WB20, Azul") for some objects. Parse the primary reference (first token) for Sources.reference; remainder go to Sources.other_references.</li>
+  <li><strong>Publications must be ingested first</strong> — all Disc, Spec, opt ref, NIR ref, plx_ref, PM_ref values must exist in Publications before any data table rows are inserted.</li>
+  <li><strong>9 objects with no Goodstuff data</strong> will have NULL for all photometry/astrometry columns — ingest Sources and SourceTypes only for those rows.</li>
+  <li><strong>Spectra table reference:</strong> The Spec column should be used as Spectra.reference (the publication that describes the spectrum). Spectrum Instrument → Spectra.instrument (FK→Instruments); must add Instruments rows first.</li>
+</ul>
+
+</body>
+</html>

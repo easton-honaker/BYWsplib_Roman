@@ -1,0 +1,184 @@
+{
+    "Sources": [
+        {
+            "source": "0227+0830",
+            "ra_deg": 36.9072967,
+            "dec_deg": 8.5024629,
+            "epoch_year": null,
+            "equinox": null,
+            "reference": "AS23",
+            "other_references": null,
+            "comments": "Comment: check ind; extra2: in sanghi23, keep for colors; Flags: COMOVER; Notes: comoving with G73-59 (sep=16\"); Gaia data from companion (036.90432805651        +08.49923672015)  Caballero 2009 suggests that G73-59 is co-moving with HIP 11707 (K4; ~36 pc); L6:: pec in Sanghi+2023"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "photometric",
+            "parameter": "distance_J",
+            "value": 37.3,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        },
+        {
+            "model": "photometric",
+            "parameter": "distance_W2",
+            "value": 39.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": null,
+            "reference": "EastonH"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "0227+0830"
+        },
+        {
+            "other_name": "J022737.75+083008.8"
+        },
+        {
+            "other_name": "telmahsel, NicholastheElder, Sam Goodman, Tom Bickle, Leopold"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 29.558,
+            "parallax_error": 0.317,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "GaiaDR3"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "H",
+            "magnitude": 15.376,
+            "magnitude_error": 0.013,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS LAS",
+            "regime": "nir"
+        },
+        {
+            "band": "J",
+            "magnitude": 16.029,
+            "magnitude_error": 0.008,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS LAS",
+            "regime": "nir"
+        },
+        {
+            "band": "K",
+            "magnitude": 14.908,
+            "magnitude_error": 0.01,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS LAS",
+            "regime": "nir"
+        },
+        {
+            "band": "W1",
+            "magnitude": 14.214,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "W2",
+            "magnitude": 13.762,
+            "magnitude_error": 0.015,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "CatWISE2020",
+            "regime": "mir"
+        },
+        {
+            "band": "Y",
+            "magnitude": 17.286,
+            "magnitude_error": 0.016,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "UKIDSS LAS",
+            "regime": "nir"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 343.6,
+            "pm_ra_error": 2.9,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -111.8,
+            "pm_dec_error": 3.0,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "pm_total": 361.3,
+            "v_tan": 57.9,
+            "adopted": true,
+            "comments": null,
+            "reference": "PS1 (Adam)"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "d/sdL8",
+            "spectral_type_error": 1.0,
+            "spectral_type_number": 18.0,
+            "comments": null,
+            "adopted": true,
+            "reference": "AS23"
+        },
+        {
+            "source_type": "sd",
+            "spectral_type_error": null,
+            "spectral_type_number": null,
+            "comments": null,
+            "adopted": null,
+            "reference": "AS23"
+        }
+    ],
+    "Spectra": [
+        {
+            "access_url": null,
+            "original_spectrum": null,
+            "local_spectrum": null,
+            "regime": "nir",
+            "telescope": "Keck",
+            "instrument": "NIRES",
+            "mode": "Prism",
+            "observation_date": "2018-10-27T00:00:00",
+            "comments": "Burgasser et al.",
+            "reference": "AS23",
+            "other_references": null
+        }
+    ]
+}

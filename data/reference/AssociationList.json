@@ -1,8 +1,110 @@
 [
     {
-        "association": "TW Hydra Association",
-        "association_type": "association",
+        "association": "ABDMG",
+        "association_type": null,
         "comments": null,
-        "reference": "Kastner97"
+        "reference": "EastonH"
+    },
+    {
+        "association": "APW1",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "ARG",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "BPMG",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CARN",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "COH59",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "COL",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CRIUS135",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CRIUS162",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CRIUS198",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CRIUS207",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CRIUS213",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CRIUS224",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CRIUS227",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "CUMA",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "OCTN",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "TWA",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
+    },
+    {
+        "association": "VCAN",
+        "association_type": null,
+        "comments": null,
+        "reference": "EastonH"
     }
 ]

@@ -1,18 +1,18 @@
 [
     {
-        "parameter": "age",
-        "description": "Age of the source"
+        "parameter": "distance_J",
+        "description": "Photometric distance from J-band magnitude (pc)"
     },
     {
-        "parameter": "mass",
-        "description": "Mass of the source"
+        "parameter": "distance_W2",
+        "description": "Photometric distance from W2-band magnitude (pc)"
     },
     {
-        "parameter": "metallicity",
-        "description": "Metallicity of the source"
+        "parameter": "bayes_distance",
+        "description": "Bayesian sigma distance estimate (pc)"
     },
     {
-        "parameter": "distance modulus",
-        "description": "Distance modulus of the source"
+        "parameter": "bayes_prob",
+        "description": "Bayesian sigma membership probability (dimensionless)"
     }
 ]

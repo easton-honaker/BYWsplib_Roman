@@ -1,32 +1,32 @@
 [
     {
-        "telescope": "2MASS",
-        "description": "The Two Micron All Sky Survey",
-        "reference": "Cutr03"
-    },
-    {
-        "telescope": "Gaia",
-        "description": "Gaia",
+        "telescope": "APO",
+        "description": null,
         "reference": null
     },
     {
-        "telescope": "SLOAN",
-        "description": "The Sloan Digital Sky Survey",
-        "reference": null
-    },
-    {
-        "telescope": "WISE",
-        "description": "Wide-field Infrared Survey Explorer",
-        "reference": "Wrig10"
-    },
-    {
-        "telescope": "Generic",
-        "description": "Generic telescope",
+        "telescope": "DCT",
+        "description": null,
         "reference": null
     },
     {
         "telescope": "IRTF",
-        "description": "Infrared Telescope Facility, Mauna Kea, Hawaii",
+        "description": null,
+        "reference": null
+    },
+    {
+        "telescope": "Keck",
+        "description": null,
+        "reference": null
+    },
+    {
+        "telescope": "Magellan",
+        "description": null,
+        "reference": null
+    },
+    {
+        "telescope": "SOAR",
+        "description": null,
         "reference": null
     }
 ]
